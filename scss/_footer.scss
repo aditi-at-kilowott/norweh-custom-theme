@@ -1,0 +1,214 @@
+// ================ Footer Styles ================//
+
+.site-footer {
+  background-color: $footer-bg;
+  color: $black;
+  padding: 60px 40px;
+  font-size: 18px;
+
+  //4 main footer columns 
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+//each individual column
+  .footer-column {
+    flex: 1 1 22%;
+    min-width: 200px;
+    
+
+    h4,
+    .footer-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #010101;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+    }
+    
+    ul,
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      
+      li {
+        margin-bottom: 20px;
+
+        a {
+          text-decoration: none;
+          color: $black;
+
+          &:hover {
+            color: $footer-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.footer-logo {
+  height: 50px !important; 
+  width: auto !important;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 5px;
+}
+
+  .footer-logo-spacing {
+    margin-top: 25px;
+    height: 24px;
+  }
+
+  // Giveaway Section
+  .giveaway-column {
+  .giveaway-subtext {
+    font-weight: bold;
+  }
+
+  .highlight-text {
+    color: rgb(0, 0, 0);
+  }
+
+  .giveaway-form {
+    margin-top: 25px;
+
+    .form-group {
+      margin-bottom: 10px; 
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    input {
+      width: 120%;
+      padding: 15px;
+      font-size: 14px;
+      border: 1.5px solid rgb(3, 3, 3);
+      border-radius: 4px;
+      outline: none;
+      box-sizing: border-box;
+
+      &:focus {
+        border-color: #1a1515;
+      }
+    }
+
+    .submit-button {
+      width: 120%;
+      padding: 15px;
+        background-color: #ff0909 !important;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      align-items: center;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #b71c1c;
+      }
+    }
+    }
+}
+
+
+  /* Payment logos (bottom strip) */
+  .payment-logos img {
+    max-height: 50px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    object-fit: contain;
+  }
+
+  /* Badge logos (below form section) */
+  .footer-badge-logos img {
+    height: 45px;
+    width: 30%;
+    object-fit:contain;
+  }
+
+  /* Layout enhancements */
+  .footer-badge-logos,
+  .payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+
+  // Footer Bottom Section
+  .footer-bottom {
+  border-top: 2px solid #333;
+  padding-top: 10px;
+  margin-top: 10px;
+  width: 150%;
+
+
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .footer-bottom-left,
+    .footer-bottom-center,
+    .footer-bottom-right {
+      flex: 1 1 30%;
+      min-width: 100px;
+    }
+  }
+
+.footer-bottom-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.footer-bottom-menu li {
+  display: inline;
+}
+
+.footer-bottom-menu a {
+  text-decoration: none;
+  color: $black;
+}
+
+.footer-bottom-menu a:hover {
+  text-decoration: underline;
+}
+}
+

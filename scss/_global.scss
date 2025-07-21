@@ -1,0 +1,22 @@
+body {
+  font-family: $primary-font;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-main {
+  padding: 40px 20px;
+}
+
+.centered-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}

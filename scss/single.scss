@@ -1,0 +1,136 @@
+.norweh-product-single {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+ .product-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+
+  .product-image img {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    border-radius: 38px;
+  }
+}
+    .product-content {
+      max-width: 600px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 0.5rem;
+      }
+
+      .rating,
+      .short-desc,
+      .delivery,
+      .warranty,
+      .price {
+      font-size: 16px;
+      margin-top: 0; 
+      color: #444;
+      }
+
+      .sale-banner-wrapper {
+        background: #e6f2d6;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 6px;
+      }
+
+      .cta-button {
+        margin-top: 15px;
+        background: #fdfdfd;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+  }
+
+  .full-description {
+    margin: 1rem 0;
+  }
+
+  .features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 2px;
+      font-size: 15px;
+    }
+  }
+
+  // Product Accordion Styling
+  .norweh-accordion {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+
+      .accordion-toggle {
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 0;
+
+        .accordion-icon {
+          font-size: 24px;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      &.active .accordion-toggle .accordion-icon {
+        transform: rotate(45deg); // turns + to ×
+      }
+
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+        padding: 0 10px;
+        background-color: #f8f8f8;
+        border-top: 1px solid #ddd;
+        margin-top: 0;
+      }
+
+      &.active .accordion-content {
+        max-height: 500px; // increase if needed
+        margin-top: 10px;
+        padding: 1rem 10px;
+      }
+    }
+  }
+

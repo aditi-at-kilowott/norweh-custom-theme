@@ -1,0 +1,92 @@
+// Blog Header
+.blog-header {
+  background: url('../assets/images/blog-page.png') no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-header-title {
+  color: $white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+// Blog Listing Section
+.blog-listing-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; 
+  gap: 30px;
+  padding: 60px 40px;
+  background-color: $light-gray;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Blog Card
+.blog-card {
+  width: 300px;
+  background: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .blog-image-wrapper {
+    position: relative;
+
+    .blog-thumbnail {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: $red;
+      color: $white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+
+  .blog-content {
+    padding: 20px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $text-color;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 13px;
+      color: $red;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
